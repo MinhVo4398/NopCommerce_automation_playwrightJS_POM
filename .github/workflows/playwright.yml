@@ -12,12 +12,11 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
-      - name: Nodejs setup  
+      - name: Nodejs setup
         uses: actions/setup-node@v3
         with:
           node-version: 18
       - name: Install dependencies
         run: npm install
-
       - name: Run Playwright tests
         run: npm run test:one

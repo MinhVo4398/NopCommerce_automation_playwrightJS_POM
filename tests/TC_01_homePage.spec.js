@@ -1,4 +1,4 @@
-/* Scenario 2: 
+/* Scenario 1: 
 Verify all element is visible and preform few action on home page.
 
 Scenario Description: 
