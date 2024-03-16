@@ -1,0 +1,20 @@
+{
+  "name": "nopcommerce",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test:one": "npx playwright test TC_01_homePage.spec.js",
+    "html-report": "npx playwright test --reporter=html && npx playwright show-report"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.40.1",
+    "@types/node": "^20.10.6"
+  },
+  "dependencies": {
+    "fs": "^0.0.1-security"
+  }
+}
