@@ -4,7 +4,7 @@ Registration and login with registered email and password.
 Scenario Description: 
 Registration and login with valid and invalid email and password to verify error message.
 
-Test Steps:
+Test Steps :
 1.	Verify open website and check url and title.
 2.	Register a user with valid data and verify successfully registered or not.
 3.	Login with valid credentials and verify successfully login or not.
@@ -20,10 +20,13 @@ test.describe("Registration and login", async () => {
     await homePage.pageTitle();
   });
 
-  test("Register a user with valid data and verify successfully registered or not", async ({ loginPage }) => {
-    await loginPage.verifySusasthoLogoIsVisible();
-    await loginPage.verifyUserIdFieldIsVisible();
-    await loginPage.verifyPasswordFieldIsVisible();
-    await loginPage.verifyCmedLogoIsVisible();
+  test("Register a user with valid data and verify successfully registered or not", async ({
+    registerPage,
+  }) => {
+    await registerPage.open_Register_Page();
+    await registerPage.verify_Registered_Text();
+    await registerPage.enter_Gender();
+    await registerPage.enter_First_name();
+
   });
 });
