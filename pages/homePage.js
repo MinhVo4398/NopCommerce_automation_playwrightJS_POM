@@ -38,7 +38,7 @@ class HomePage extends BasePage {
   async verifyLogoVisible() {
     await this.isElementVisible(logo, testData.notVisibleText);
   }
-  async verifySwitchCurrency() {N
+  async verifySwitchCurrency() {
     await this.isElementVisible(currencySelectBox, testData.notVisibleText);
     await this.selectOptionFromDropdown(currencySelectBox, currency);
     await expect(this.page.locator(productPrice)).toContainText(euroLogo);
@@ -55,7 +55,6 @@ class HomePage extends BasePage {
       successNotificationBar,
       testData.notVisibleText
     );
- 
   }
 }
 

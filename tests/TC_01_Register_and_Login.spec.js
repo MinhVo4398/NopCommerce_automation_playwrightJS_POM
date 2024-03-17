@@ -23,10 +23,17 @@ test.describe("Registration and login", async () => {
   test("Register a user with valid data and verify successfully registered or not", async ({
     registerPage,
   }) => {
-    await registerPage.open_Register_Page();
-    await registerPage.verify_Registered_Text();
-    await registerPage.enter_Gender();
-    await registerPage.enter_First_name();
-
+    await registerPage.open_register_page();
+    await registerPage.verify_registered_text();
+    await registerPage.enter_gender();
+    await registerPage.enter_first_name();
+    await registerPage.enter_last_name();
+    await registerPage.enter_birthday();
+    await registerPage.enter_email();
+    await registerPage.enter_company();
+    await registerPage.enter_password();
+    await registerPage.enter_cpassword();
+    await registerPage.click_registration_btn();
+    await registerPage.verify_register_success_message();
   });
 });

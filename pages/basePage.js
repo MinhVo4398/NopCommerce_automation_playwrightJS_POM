@@ -13,7 +13,7 @@ class BasePage {
     return await this.page.title();
   }
 
-  async pause() {
+  async page_pause() {
     return await this.page.pause();
   }
 
