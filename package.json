@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test:one": "npx playwright test TC_01_homePage.spec.js",
+    "test:one": "npx playwright test TC_01_Register_and_Login.spec.js",
+    "test:two": "npx playwright test TC_02_homePage.spec.js",
     "html-report": "npx playwright test --reporter=html && npx playwright show-report"
   },
   "keywords": [],
