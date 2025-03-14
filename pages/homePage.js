@@ -15,6 +15,7 @@ import {
 import { expect } from "@playwright/test";
 
 const testData = JSON.parse(fs.readFileSync(`./data/users.json`, `utf-8`));
+
 class HomePage extends BasePage {
   constructor(page) {
     super(page);

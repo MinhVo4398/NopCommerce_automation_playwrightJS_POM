@@ -5,8 +5,9 @@ class BasePage {
     this.page = page;
   }
 
+  // waitUntil: "load" | "domcontentloaded" | "networkidle" | "commit",
   async open(url) {
-    return await this.page.goto(url);
+    return await this.page.goto(url, { waitUntil: "networkidle" });
   }
 
   async getTitle() {
